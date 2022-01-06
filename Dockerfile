@@ -25,7 +25,7 @@ COPY nugu/ ${CROSS_SYSROOT}/
 COPY Toolchain.cmake /opt/toolchain/
 
 RUN apt-get update \
-	&& apt-get install -y make wget patch python3 \
+	&& apt-get install -y make wget curl jq patch python3 \
 	&& wget --no-verbose https://download.automotivelinux.org/AGL/release/koi/latest/qemux86-64/deploy/sdk/poky-agl-glibc-x86_64-agl-demo-platform-crosssdk-corei7-64-qemux86-64-toolchain-11.0.4.sh \
 	&& chmod +x *.sh \
 	&& ./poky*.sh \
