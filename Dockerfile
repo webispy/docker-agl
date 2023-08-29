@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-ENV AGL_BASE=/opt/agl-sdk/11.0.4-corei7-64 \
+ENV AGL_BASE=/opt/agl-sdk/11.0.5-corei7-64 \
     CROSS_TRIPLE=x86_64-agl-linux \
     ARCH=arm64
 
