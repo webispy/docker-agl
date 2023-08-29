@@ -22,6 +22,7 @@ ENV AS=${CROSS_TRIPLE}-as \
     CMAKE_TOOLCHAIN_FILE=${CROSS_ROOT}/Toolchain.cmake
 
 COPY nugu/ ${CROSS_SYSROOT}/
+COPY rapidjson/ ${CROSS_SYSROOT}/
 COPY Toolchain.cmake /opt/toolchain/
 
 RUN apt-get update \
